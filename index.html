@@ -1,25 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RIDDHIMA | Girl Theme</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<title>GirlGram</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#fafafa}
+header{
+position:sticky;top:0;background:white;padding:15px 25px;
+display:flex;justify-content:space-between;align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);z-index:100;
+}
+.logo{font-size:28px;font-weight:700;color:#ff4fa3}
+nav a{text-decoration:none;color:#333;margin:0 10px;font-weight:600}
+.hero{
+height:380px;
+background:linear-gradient(135deg,#ff77c8,#ffb6d9);
+display:flex;flex-direction:column;justify-content:center;align-items:center;
+text-align:center;color:white;
+}
+.hero h1{font-size:3rem}
+.hero p{margin-top:10px;font-size:1.1rem}
+.profile{
+max-width:1000px;margin:-60px auto 20px;background:white;border-radius:20px;
+padding:25px;box-shadow:0 10px 30px rgba(0,0,0,.1);
+display:flex;gap:20px;align-items:center;
+}
+.avatar{
+width:140px;height:140px;border-radius:50%;
+background:url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500') center/cover;
+border:5px solid #ff69b4;
+}
+.stats{display:flex;gap:25px;margin-top:10px}
+.stat b{display:block;font-size:1.2rem}
+.gallery{
+max-width:1000px;margin:auto;padding:20px;
+display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;
+}
+.card{
+background:white;border-radius:18px;overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+.card img{width:100%;height:300px;object-fit:cover}
+.card .content{padding:15px}
+.like{color:#ff4fa3;font-weight:700}
+footer{
+text-align:center;padding:25px;margin-top:20px;background:white;
+}
+</style>
 </head>
 <body>
-<div class="container">
-  <h1>RIDDHIMA ♡</h1>
-  <div class="avatar-frame">
-    <img src="https://via.placeholder.com/140" alt="avatar">
-  </div>
-  <p>Cute but Dangerous ♡</p>
-  <div class="action-cluster">
-    <a href="#" class="trigger-btn">YouTube</a>
-    <a href="#" class="trigger-btn">Discord</a>
-    <a href="https://instagram.com" class="trigger-btn insta-btn">Instagram <i class="fa-brands fa-instagram"></i></a>
-  </div>
+
+<header>
+<div class="logo">GirlGram</div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Posts</a>
+<a href="#">Profile</a>
+<a href="#">Messages</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Welcome to GirlGram 💖</h1>
+<p>An Instagram-style profile website</p>
+</section>
+
+<section class="profile">
+<div class="avatar"></div>
+<div>
+<h2>Sophia Rose ✨</h2>
+<p>Fashion • Lifestyle • Travel • Photography</p>
+
+<div class="stats">
+<div class="stat"><b>125</b>Posts</div>
+<div class="stat"><b>50K</b>Followers</div>
+<div class="stat"><b>800</b>Following</div>
 </div>
-<script src="script.js"></script>
+</div>
+</section>
+
+<section class="gallery">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800">
+<div class="content">
+<h3>Fashion Day</h3>
+<p class="like">❤️ 12.5K Likes</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800">
+<div class="content">
+<h3>Travel Moments</h3>
+<p class="like">❤️ 9.8K Likes</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800">
+<div class="content">
+<h3>Weekend Vibes</h3>
+<p class="like">❤️ 15.2K Likes</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800">
+<div class="content">
+<h3>Selfie Time</h3>
+<p class="like">❤️ 18.7K Likes</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?w=800">
+<div class="content">
+<h3>Summer Look</h3>
+<p class="like">❤️ 11.1K Likes</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800">
+<div class="content">
+<h3>Beauty Shot</h3>
+<p class="like">❤️ 21.4K Likes</p>
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 GirlGram - Instagram Style Website
+</footer>
+
 </body>
 </html>
